@@ -4,15 +4,30 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Cabeçalho do site ------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(18, 18, 18);
+    padding: 20px;
 }
 
 li {
     display: flex;
     gap: 20px;
+    padding: 10px;
 }
 
 a {
-    text-decoration: none;
+
     color: rgb(89, 89, 226);
 }
 
@@ -20,11 +35,39 @@ h3 > a:hover {
     background-color: black;
 }
 
-header {
+#logo {
+    width: 350px;
+}
+
+
+/* Primeira "Section" - Sobre Mim e Contato ------------------------------------------------------------------------- */
+
+.meio {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(18, 18, 18);
-    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(244, 244, 244);
+    padding-top: 60px;
+    max-width: 80%;
+}
+
+#titulo {
+    padding-left: 120px;
+    font-size: 23px;
+    color: rgb(89, 89, 226);
+}
+
+#descricao {
+    padding-top: 10px;
+    padding-left: 150px;
+    font-size: 18px;
+}
+
+#contato {
+    padding-top: 20px;
+    padding-left: 120px;
+    font-size: 23px;
+    color: rgb(89, 89, 226);
 }
 
 #github {
@@ -41,52 +84,7 @@ header {
     padding-left: 20px;
 }
 
-#facebook {
-    width: 100px;
-    height: 100px;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-#contato {
-    padding-top: 20px;
-    padding-left: 120px;
-    font-size: 23px;
-    color: rgb(89, 89, 226);
-}
-
-#lista {
-    list-style: none;
-}
-
-body {
-    background-color: rgb(50, 50, 50);
-}
-
-#logo {
-    width: 350px;
-}
-
-.meio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(244, 244, 244);
-    padding-top: 60px;
-    max-width: 80%;
-}
-
-#sobre {
-    padding-left: 120px;
-    font-size: 23px;
-    color: rgb(89, 89, 226);
-}
-
-#sobre2 {
-    padding-top: 10px;
-    padding-left: 150px;
-    font-size: 18px;
-}
+/* Segunda "Section" - Projetos ------------------------------------------------------------------------- */
 
 .projetos {
     color: rgb(244, 244, 244);
@@ -96,20 +94,16 @@ body {
     padding-bottom: 40px;
 }
 
-#projeto {
-    padding-left: 120px;
-    font-size: 23px;
-    color: rgb(89, 89, 226);
-}
-
-#projeto2 {
+.projetos > p {
     max-width: 70%;
-    padding-top: 10px;
-    padding-left: 150px;
-    font-size: 18px;
 }
 
-#quadradop {
+.projetosquadrados {
+    display: flex;
+    margin-right: 100px;
+}
+
+#quadrado {
     text-align: center;
     padding-top: 20px;
     margin-top: 40px;
@@ -118,77 +112,22 @@ body {
     width: 300px;
     height: 300px;
     color: rgb(231, 230, 230);
-    background-color: rgb(6, 6, 6);
+    background-color: rgb(10, 10, 10);
     border: 3px solid rgb(89, 89, 226);
     border-radius: 20px;
-    text-decoration: none;
 }
 
-#dentro {
+#descricaoprojeto {
     font-size: 18px;
     padding-top: 20px;
 }
 
-#dentro2 {
+#cliqueaqui {
     padding-top: 50px;
     font-size: 22px;
 }
 
-.projetosquadrados {
-    display: flex;
-    margin-right: 100px;
-}
-
-.instituicoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(244, 244, 244);
-    padding-top: 60px;
-    max-width: 80%;
-}
-
-.habilidades {
-    color: rgb(244, 244, 244);
-    padding-top: 50px;
-    margin-top: 50px;
-    background-color: rgb(60, 60, 60);
-}
-
-#habilidades {
-    padding-left: 120px;
-    font-size: 23px;
-    color: rgb(89, 89, 226);
-}
-
-li {
-    padding: 10px;
-}
-
-#habilidades2 {
-    padding-top: 10px;
-    padding-left: 150px;
-    font-size: 18px;
-    max-width: 70%;
-    padding-bottom: 50px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(244, 244, 244);
-    padding-top: 60px;
-    max-width: 80%;
-    padding-bottom: 50px;
-}
-
-#formula {
-    padding-left: 120px;
-    font-size: 23px;
-    color: rgb(89, 89, 226);
-    padding-bottom: 20px;
-}
+/* Terceira "Section" - Instituições ------------------------------------------------------------------------- */
 
 #instituicao {
     color: rgb(89, 89, 226);
@@ -204,9 +143,52 @@ footer {
     padding-bottom: 20px;
 }
 
+/* Quarta "Section" - Habilidades ------------------------------------------------------------------------- */
+
+.habilidades {
+    color: rgb(244, 244, 244);
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: rgb(60, 60, 60);
+}
+
+#habilidadestitulo {
+    padding-left: 120px;
+    font-size: 23px;
+    color: rgb(89, 89, 226);
+}
+
+#habilidades {
+    padding-top: 10px;
+    padding-left: 150px;
+    font-size: 18px;
+    max-width: 70%;
+    padding-bottom: 50px;
+}
+
+/* Rodapé do site - Formulario ------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(244, 244, 244);
+    padding-top: 60px;
+    max-width: 80%;
+    padding-bottom: 50px;
+}
+
+#formulariotitulo {
+    padding-left: 120px;
+    font-size: 23px;
+    color: rgb(89, 89, 226);
+    padding-bottom: 20px;
+}
+
 input {
     margin: 10px;
     margin-left: 150px;
+    color: white;
 }
 
 textarea {
@@ -217,36 +199,30 @@ textarea {
 form input,
 form textarea {
     width: 100%;
-    border: 0;
-    border-radius: 15px;
     padding: 15px 10px;
-    background-color: rgb(6, 6, 6);
-    color: white;
+    background-color: rgb(10, 10, 10);
     font-size: 18px;
 }
 
-#botao2 {
+#botao {
     width: 120px;
     cursor: pointer;
 }
 
-.projeto1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Projetos ------------------------------------------------------------------------- */
+
+.imagens {
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-bottom: 100px;
+}
+
+.projeto {
     color: rgb(244, 244, 244);
     padding-top: 60px;
 }
 
-#projeto1 {
-    display: block;
-    margin: auto;
-    width: 500px;
-    height: 500px;
-}
-
-#textoprojeto {
-    padding-top: 10px;
-    padding-left: 100px;
-    font-size: 18px;
+#projeto {
+    width: 400px;
+    height: 400px;
 }
