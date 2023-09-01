@@ -5,21 +5,54 @@
     padding: 0px;
     font-family: 'Rubik', sans-serif;
 }
-#botao {
-    list-style-type: none;
+
+li {
+    display: flex;
+    gap: 20px;
 }
 
-#botao:hover {
+a {
+    text-decoration: none;
+    color: rgb(89, 89, 226);
+}
+
+h3 > a:hover {
     background-color: black;
 }
 
 header {
-    color: rgb(89, 89, 226);
     display: flex;
     justify-content: space-between;
     background-color: rgb(18, 18, 18);
     padding: 20px;
-    
+}
+
+#github {
+    width: 109px;
+    height: 109px;
+    padding-top: 10px;
+    padding-left: 145px;
+}
+
+#linkedin {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#facebook {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#contato {
+    padding-top: 20px;
+    padding-left: 120px;
+    font-size: 23px;
+    color: rgb(89, 89, 226);
 }
 
 #lista {
@@ -31,7 +64,7 @@ body {
 }
 
 #logo {
-    width: 300px;
+    width: 350px;
 }
 
 .meio {
@@ -106,7 +139,7 @@ body {
     margin-right: 100px;
 }
 
-.instituições {
+.instituicoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +173,7 @@ li {
     padding-bottom: 50px;
 }
 
-.formulario {
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,4 +228,25 @@ form textarea {
 #botao2 {
     width: 120px;
     cursor: pointer;
+}
+
+.projeto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(244, 244, 244);
+    padding-top: 60px;
+}
+
+#projeto1 {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+#textoprojeto {
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 18px;
 }
