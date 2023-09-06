@@ -168,9 +168,7 @@ h3 > a:hover {
 /* Rodapé do site - Formulario ------------------------------------------------------------------------- */
 
 footer {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     color: rgb(244, 244, 244);
     padding-top: 60px;
     max-width: 80%;
